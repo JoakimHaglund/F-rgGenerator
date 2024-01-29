@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="sv">
+	<head>
+		<title>Färg generator - Inlämning 5</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/stylesheet.css"/>
+		<script src="scripts/script.js"></script>
+	</head>
+	
+	<!-- I uppgift 5 har jag gjort en sidan som genererar färger (med färgkoder) där man kan lägga till och ta bort kolumner med ett knapptryck. -->	
+
+	<body onload= "addOnLoad()">
+		<header>
+			<h1>Inlämning 5 - En färg generator</h1>	
+		</header>
+		<div class="generatorControlls">
+		<!-- ändrar färg på alla div-element inom div elementet med id "colorBoxHolder"  -->
+		<button onclick="randomColor()">Randomize</button>
+		<!-- Knapp för att lägga till div-element -->
+		<button onclick="addElement()">Add</button>
+		<!-- Knapp för att ta bort div-element  -->
+		<button onclick="removeElement()">Remove</button>
+		</div>
+		
+		<!-- Här i skapar jag div-element och paragrafer med hjälp av javascript -->
+		<div class="wrapper" id="colorBoxHolder" >
+			
+		</div>
+	
+		<!-- Sid-fot. här lägger jag in en tidstämpel -->
+		<footer>
+			<p><i>Senast updaterad: <time datetime="2020-05-03">20-05-03</time></i></p>
+		</footer>
+	
+	</body>
+</html>

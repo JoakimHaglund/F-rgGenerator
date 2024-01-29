@@ -1,0 +1,111 @@
+/*
+======================================================================
+Allmänna regler
+======================================================================
+*/
+
+html {
+	background-color:#fff;
+	font-size: 62.5%;  									/*Bra storlek för att använda REM då 62.5% av 16px är 10*/
+	height: 100%;
+}
+
+/*
+Ändrar bakgrundsfärg och tar bort margin på body.
+Visar även inehållet som flex-kolumner
+*/
+body {
+	background-color: #ff;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Ändrar text-färg/storlek och font på alla element*/
+* {
+	color: #000;
+	font-size: 1.6rem;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/*Ändrar storlek på rubriken*/
+header h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+/*Ändrar bakgrudsfärg på sid-huvud och sid-fot*/
+header, footer{
+	background-color:#e1e1e1;
+}
+
+/*Lägger till lite padding i över och underkant och ta upp 100% bredd på sidan*/
+header {
+	padding: 10px 0px 10px 0px;
+	width: 100%
+}
+
+/*Ännu mera padding, den här gången till sidfoten*/
+footer {
+	padding: 20px 0px 20px 30px;	
+}
+
+/*
+======================================================================
+Regler för 
+======================================================================
+*/
+
+div.colorBox {
+	height: 800px; 									/*Ger divarna en höjd*/
+}
+
+p.colorCode {
+	text-align: center;							/*Centrerar texten*/
+	font-size: 3rem;								/*Ändrar storlek på texten*/
+	color: #fff; 										/*Ändrar texten till vit så det syns på mörka färger.*/
+	text-shadow: 0px 0px 3px #000;	/*Skapar en skugga som man kan läsa texten på ljusa färger.*/
+	position: relative;						 	/*Gör textens position till relativ fån urspungspositionen.*/
+	top: 80%; 											/*Flyttar texten nedåt med 80%*/
+}
+
+div.wrapper{
+	display: flex;									/*visar inehållet som flex element*/
+	flex-direction: row;						/*visar inehållet på en rad*/
+	width: 100%;										/*ta upp all bredd*/
+}
+
+div.generatorControlls {
+	display: flex;									/*visar inehållet som flex element*/
+	justify-content: center;				/*centrerar inehållet (knapparna)*/
+		
+}
+
+button {
+	padding: 15px;  								/*Lite padding till knappar*/
+	margin: 5px;										/*Och mellanrum*/
+	border-radius: 5px; 						/*Rundar även av hörnen*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
